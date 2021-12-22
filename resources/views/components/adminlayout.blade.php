@@ -29,8 +29,16 @@
     </head>
     <body>
         <!-- Sidebar -->
-
-        {{ $slot }}
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 my-5 p-3">
+                    <x-sidenav></x-sidenav>
+                </div>
+                <div class="col-md-9">
+                    {{ $slot }}
+                </div>
+            </div>
+        </div>
 
         <!-- Footer  -->
         <x-footer></x-footer>

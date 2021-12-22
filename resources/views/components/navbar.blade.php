@@ -69,7 +69,7 @@
                     <!-- Dropdown menu -->
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li>
-                            <a class="dropdown-item" href="#">Heart</a>
+                            <a class="dropdown-item" href="{{ route('knowledge') }}">All Knowledge</a>
                         </li>
                         <li>
                             <a class="dropdown-item" href="#">Diabetes</a>

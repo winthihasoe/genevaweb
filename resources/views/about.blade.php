@@ -84,5 +84,7 @@
                 <!-- Default form contact -->
             </div>
         </div>
+        <!-- Who We Are Component -->
+        <x-whoWeAre></x-whoWeAre>
     </div>
 </x-pagelayout>

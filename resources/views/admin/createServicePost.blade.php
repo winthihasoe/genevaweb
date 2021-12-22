@@ -6,14 +6,16 @@
     
     <!-- Main Content -->
     <div class="container my-5 grey">
+        <p class="h4 text-center py-4">Create Service Post</p>
+
         <div class="row">
             <!-- Card -->
             <div class="card mx-xl-5">
                 <!-- Card body -->
                 <div class="card-body">
                     <!-- Default form subscription -->
-                    <form>
-                        <p class="h4 text-center py-4">Create Service Post</p>
+                    <form action="{{route('storeServicePost')}}" method="POST" enctype="multipart/form-data">
+                    @csrf
 
                         <!-- Default input name -->
                         <div class="form-group purple-border"></div>
@@ -24,24 +26,42 @@
                             >
                             <input
                                 type="text"
+                                name="title"
                                 id="defaultFormCardNameEx"
                                 class="form-control"
+                                autofocus
                             />
                         
 
-                        <br />
+                            <br />
 
                         
-                        <label
-                        for="defaultFormCardNameEx"
-                        class="grey-text font-weight-light"
-                        >Body title</label
+                            <label
+                            for="defaultFormCardNameEx"
+                            class="grey-text font-weight-light"
+                            >Body</label
                     >
                             <textarea
                                 class="form-control"
+                                name="body"
                                 id="exampleFormControlTextarea4"
                                 rows="3"
                             ></textarea>
+
+                            <br>
+
+                            <label
+                                for="defaultFormCardNameEx"
+                                class="grey-text font-weight-light"
+                                >Service Photo</label
+                            >
+                            <input
+                                type="file"
+                                name="image"
+                                id="defaultFormCardNameEx"
+                                class="form-control"
+                                accept="image/png, image/jpeg"
+                            />
                         </div>
 
                         <div class="text-center py-4 mt-3">
@@ -61,3 +81,4 @@
         </div>
     </div>
 </x-adminlayout>
+

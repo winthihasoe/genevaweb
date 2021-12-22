@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use phpDocumentor\Reflection\Types\Nullable;
 
 class CreateServicesTable extends Migration
 {
@@ -17,7 +18,7 @@ class CreateServicesTable extends Migration
             $table->id();
             $table->string('title');
             $table->text('body');
-            // $table->file('image');
+            $table->string('image')->nullable;
             $table->timestamps();
         });
     }

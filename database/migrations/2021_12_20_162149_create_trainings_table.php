@@ -15,6 +15,9 @@ class CreateTrainingsTable extends Migration
     {
         Schema::create('trainings', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->text('body');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

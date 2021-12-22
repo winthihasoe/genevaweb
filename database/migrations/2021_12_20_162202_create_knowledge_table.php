@@ -15,6 +15,10 @@ class CreateKnowledgeTable extends Migration
     {
         Schema::create('knowledge', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->text('body');
+            $table->string('image');
+            $table->string('tags')->nullable();
             $table->timestamps();
         });
     }

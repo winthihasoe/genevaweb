@@ -30,3 +30,6 @@ Route::get('/knowledge',[PageController::class,'knowledge'])->name('knowledge');
 Route::get('/createServicePost',[AdminPageController::class,'createServicePost'])->name('createServicePost');
 Route::get('/createTrainingPost',[AdminPageController::class,'createTrainingPost'])->name('createTrainingPost');
 Route::get('/createKnowledgePost',[AdminPageController::class,'createKnowledgePost'])->name('createKnowledgePost');
+Route::post('/storeServicePost',[AdminPageController::class,'storeServicePost'])->name('storeServicePost');
+Route::post('/storeTrainingPost',[AdminPageController::class,'storeTrainingPost'])->name('storeTrainingPost');
+Route::post('/storeKnowledgePost',[AdminPageController::class,'storeKnowledgePost'])->name('storeKnowledgePost');
