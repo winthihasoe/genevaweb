@@ -5,12 +5,12 @@
 
     
     <!-- Main Content -->
-    <div class="container my-5 grey">
+    
         <p class="h4 text-center py-4">Create Service Post</p>
 
         <div class="row">
             <!-- Card -->
-            <div class="card mx-xl-5">
+            <div class="card">
                 <!-- Card body -->
                 <div class="card-body">
                     <!-- Default form subscription -->
@@ -79,6 +79,5 @@
             </div>
             <!-- Card -->
         </div>
-    </div>
 </x-adminlayout>
 

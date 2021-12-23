@@ -27,25 +27,41 @@
         <!-- Custom CSS  -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
     </head>
+
     <body>
-        <!-- Sidebar -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3 my-5 p-3">
-                    <x-sidenav></x-sidenav>
-                </div>
-                <div class="col-md-9">
+        <div id="wrapper" class="toggled">
+            <!-- Sidebar -->
+            <x-sidenav></x-sidenav>
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
                     {{ $slot }}
                 </div>
             </div>
+            <!-- /#page-content-wrapper -->
         </div>
+        <!-- /#wrapper -->
 
-        <!-- Footer  -->
-        <x-footer></x-footer>
         <!-- MDB -->
         <script
             type="text/javascript"
             src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"
         ></script>
+
+        <!-- bootstrap  -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Menu Toggle Script -->
+        <!-- <script>
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+        </script> -->
     </body>
 </html>

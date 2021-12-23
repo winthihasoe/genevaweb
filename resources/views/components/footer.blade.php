@@ -58,7 +58,7 @@
         class="text-center text-dark p-3"
         style="background-color: rgba(0, 0, 0, 0.2)"
     >
-        © 2022 Copyright:
+        © 2022 Copyright
         <a class="text-dark" href="https://genevacaring.com/">Geneva Co.,Ltd</a>
         All right reserved
     </div>
